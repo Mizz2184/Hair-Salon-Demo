@@ -11,9 +11,15 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
     <section id="about" className="py-16 lg:py-24 bg-zinc-900 text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+<<<<<<< HEAD
           
           {/* Left Block: Philosophy Card */}
           <motion.div 
+=======
+
+          {/* Left Block: Philosophy Card */}
+          <motion.div
+>>>>>>> 379e349 (Update salon images and object-top styling)
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -65,7 +71,11 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           </motion.div>
 
           {/* Right Block: 3-Image Salon Layout */}
+<<<<<<< HEAD
           <motion.div 
+=======
+          <motion.div
+>>>>>>> 379e349 (Update salon images and object-top styling)
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
@@ -90,23 +100,23 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="flex flex-col gap-4">
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
-                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
+                  src="/746807842_18607939687037038_2671941514086192163_n.jpg"
                   alt="Salón de Color True Salon Curls"
-                  className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-                  SALÓN DE COLOR
+
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
-                  src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
+                  src="/748088944_18607939672037038_2828511024218819537_n.jpg"
                   alt="Zona de Lavado e Hidratación Rizada"
-                  className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-                  DIAGNÓSTICO & DETOX
+
                 </div>
               </div>
             </div>
