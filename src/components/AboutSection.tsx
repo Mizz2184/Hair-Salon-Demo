@@ -85,9 +85,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="flex flex-col gap-4">
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
-                  src="/746807842_18607939687037038_2671941514086192163_n.jpg"
+                  src="/makeup_zone_studio.png"
                   alt="Zona de Maquillaje Profesional"
-                  className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
                   ZONA DE MAQUILLAJE PROFESIONAL
@@ -96,9 +96,9 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
-                  src="/748088944_18607939672037038_2828511024218819537_n.jpg"
+                  src="/hair_salon_studio_interior.png"
                   alt="NUESTRO ESTUDIO"
-                  className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
+                  className="w-full h-full object-cover object-center editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
                   NUESTRO ESTUDIO
