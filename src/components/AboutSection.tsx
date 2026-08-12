@@ -11,15 +11,8 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
     <section id="about" className="py-16 lg:py-24 bg-zinc-900 text-white transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
-<<<<<<< HEAD
-          
-          {/* Left Block: Philosophy Card */}
-          <motion.div 
-=======
-
           {/* Left Block: Philosophy Card */}
           <motion.div
->>>>>>> 379e349 (Update salon images and object-top styling)
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -71,11 +64,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
           </motion.div>
 
           {/* Right Block: 3-Image Salon Layout */}
-<<<<<<< HEAD
-          <motion.div 
-=======
           <motion.div
->>>>>>> 379e349 (Update salon images and object-top styling)
             initial={{ opacity: 0, x: 30 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
