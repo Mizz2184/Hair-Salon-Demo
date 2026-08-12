@@ -29,9 +29,9 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
               {/* Main Headline */}
               <h1 className="font-display text-5xl sm:text-7xl xl:text-8xl font-bold tracking-tight text-zinc-900 dark:text-white uppercase leading-[0.92] sm:leading-[0.90]">
-                TU RIZO,<br />
-                TU IDENTIDAD,<br />
-                TU MEJOR VERSIÓN.
+                EL SECRETO DE UNOS<br />
+                RIZOS PERFECTOS<br />
+                EMPIEZA AQUÍ.
               </h1>
 
               <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base max-w-lg leading-relaxed pt-2 font-sans-body">
