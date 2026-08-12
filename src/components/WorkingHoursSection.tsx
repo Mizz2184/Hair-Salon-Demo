@@ -36,36 +36,29 @@ export const WorkingHoursSection: React.FC<WorkingHoursSectionProps> = ({ onSele
           >
             <div>
               <span className="text-xs font-bold uppercase tracking-widest text-amber-500 font-semibold">
-                SANTA ANA, COSTA RICA
+                AGENDA TU VISITA
               </span>
               <h2 className="font-display text-5xl sm:text-7xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white mt-1">
-                HORARIO Y CITAS
+                HORARIO DE ATENCIÓN
               </h2>
             </div>
 
             {/* Schedule Table */}
             <div className="space-y-4 pt-2">
               <div className="flex items-center justify-between py-3 border-b border-zinc-200 dark:border-zinc-800">
-                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">LUNES A SÁBADO</span>
-                <span className="font-mono text-sm font-semibold text-amber-600 dark:text-amber-400">PRÓXIMAMENTE (OPENING SOON)</span>
-              </div>
-
-              <div className="flex items-center justify-between py-3 border-b border-zinc-200 dark:border-zinc-800">
-                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">DOMINGO</span>
-                <span className="font-mono text-sm font-semibold text-zinc-500 uppercase">POR CONFIRMAR</span>
+                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">HORARIO DE ATENCIÓN</span>
+                <span className="font-mono text-sm font-semibold text-emerald-600 dark:text-emerald-400">ABIERTO AHORA</span>
               </div>
             </div>
 
             <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-xs text-zinc-700 dark:text-zinc-300 font-sans-body">
-              <p className="font-semibold text-amber-700 dark:text-amber-300 mb-1">ℹ️ Nota de Apertura:</p>
-              <p>Nuestra página oficial de Facebook indica "Próximamente". Puedes seleccionar una fecha previa en el calendario o solicitar tu cita por mensaje para coordinar tu evaluación.</p>
+              <p className="font-semibold text-amber-700 dark:text-amber-300 mb-1">⚠️ Nota:</p>
+              <p className="italic">[Completar horario exacto con el cliente antes de publicar — la página indica "Abierto ahora"]</p>
             </div>
 
-            {/* Footnote Disclosures */}
-            <div className="space-y-2 pt-2 text-[11px] text-zinc-500 dark:text-zinc-400 uppercase leading-relaxed font-sans-body">
-              <p>* PARA SERVICIOS DE COLORACIÓN SE REQUIERE PRUEBA DE PARCHE DE PIEL 48 HORAS ANTES</p>
-              <p>* SE SOLICITA UN DEPÓSITO PARA CONFIRMAR Y ASEGURAR TU CITA</p>
-              <p>* CANCELACIONES CON UN MÍNIMO DE 24 HORAS DE ANTICIPACIÓN</p>
+            <div className="p-4 bg-zinc-100 dark:bg-zinc-900 border border-zinc-200 dark:border-zinc-800 rounded-xl text-xs text-zinc-800 dark:text-zinc-200 font-sans-body space-y-1">
+              <p className="font-bold uppercase tracking-wider text-amber-600 dark:text-amber-400">Contacto Directo</p>
+              <p>Escríbenos al <strong className="text-zinc-900 dark:text-white">+506 8583 2424</strong> o al correo <strong className="text-zinc-900 dark:text-white">jkstudioatm@gmail.com</strong> para agendar tu cita.</p>
             </div>
           </motion.div>
 

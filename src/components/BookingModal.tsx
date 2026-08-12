@@ -16,9 +16,9 @@ export const BookingModal: React.FC<BookingModalProps> = ({
   initialDate,
 }) => {
   const [step, setStep] = useState<number>(1);
-  const [selectedServiceId, setSelectedServiceId] = useState<string>(initialServiceId || 'layers');
+  const [selectedServiceId, setSelectedServiceId] = useState<string>(initialServiceId || 'maquillaje-glam');
   const [selectedStylistId, setSelectedStylistId] = useState<string>('stylist-1');
-  const [bookingDate, setBookingDate] = useState<string>(initialDate || '2023-11-03');
+  const [bookingDate, setBookingDate] = useState<string>(initialDate || '2026-08-15');
   const [selectedTime, setSelectedTime] = useState<string>('11:30 AM');
   
   // Client details
@@ -51,7 +51,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         <div className="bg-zinc-900 text-white p-6 sm:p-8 flex items-center justify-between relative">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-amber-400">RESERVA EN LÍNEA</span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold uppercase mt-1">RESERVA EN TRUE SALON CURLS</h2>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold uppercase mt-1">RESERVA EN JK STUDIO</h2>
           </div>
 
           <button
@@ -279,7 +279,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                     </div>
                     <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 text-[11px] text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1.5">
                       <ShieldCheck className="w-4 h-4" />
-                      <span>Reserva previa de evaluación en Santa Ana, Costa Rica</span>
+                      <span>Reserva previa de cita en Jk Studio, Costa Rica</span>
                     </div>
                   </div>
 
@@ -333,7 +333,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 </div>
                 <div className="flex justify-between py-1">
                   <span className="text-zinc-500">Ubicación:</span>
-                  <span className="font-bold">Santa Ana, San José, Costa Rica</span>
+                  <span className="font-bold">Costa Rica (+506 8583 2424)</span>
                 </div>
               </div>
 

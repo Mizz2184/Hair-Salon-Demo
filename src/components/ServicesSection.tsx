@@ -18,22 +18,22 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
         {/* Giant Centered Headline */}
         <div className="text-center mb-16 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
-            NUESTROS SERVICIOS
+            ALTA PELUQUERÍA Y GLAM PROFESIONAL
           </span>
           <h2 className="font-display text-6xl sm:text-8xl font-bold uppercase tracking-tight text-white leading-none">
-            SERVICIOS Y PRECIOS
+            NUESTROS SERVICIOS
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto font-sans-body">
-            Diagnóstico capilar, cortes en seco para rizos, coloración respetuosa y acompañamiento de transición de liso a rizo.
+            Servicios diseñados para cada ocasión. Selecciona cualquiera para ver detalles y reservar tu cita.
           </p>
         </div>
 
-        {/* Bento Grid layout matching the reference screenshot */}
+        {/* Bento Grid layout */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           
-          {/* Card 1: LAYERS (Large featured card) */}
-          {SERVICES.find(s => s.id === 'layers') && (() => {
-            const service = SERVICES.find(s => s.id === 'layers')!;
+          {/* Card 1: MAQUILLAJE GLAM HD (Large featured card) */}
+          {SERVICES.find(s => s.id === 'maquillaje-glam') && (() => {
+            const service = SERVICES.find(s => s.id === 'maquillaje-glam')!;
             return (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -51,17 +51,20 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
 
                 <div className="absolute inset-0 p-8 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
-                    <span className="text-xs font-mono font-semibold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full border border-white/20">
-                      {service.priceFormat}
+                    <span className="text-xs font-mono font-semibold bg-amber-400 text-zinc-950 px-3 py-1 rounded-full border border-amber-300">
+                      DESTACADO
                     </span>
                   </div>
 
                   <div className="space-y-3">
-                    <h3 className="font-display text-5xl sm:text-6xl font-bold uppercase tracking-tight text-white drop-shadow-md">
+                    <h3 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white drop-shadow-md">
                       {service.name}
                     </h3>
-                    <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-amber-300 hover:text-white transition-colors underline underline-offset-4">
-                      <span>PRECIOS Y DETALLES</span>
+                    <p className="text-zinc-300 text-xs sm:text-sm font-sans-body leading-relaxed max-w-xs">
+                      {service.description}
+                    </p>
+                    <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-amber-300 hover:text-white transition-colors underline underline-offset-4 pt-2">
+                      <span>VER DETALLES</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
                   </div>
@@ -70,9 +73,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
             );
           })()}
 
-          {/* Card 2: VOLUME */}
-          {SERVICES.find(s => s.id === 'volume') && (() => {
-            const service = SERVICES.find(s => s.id === 'volume')!;
+          {/* Card 2: CORTES */}
+          {SERVICES.find(s => s.id === 'cortes') && (() => {
+            const service = SERVICES.find(s => s.id === 'cortes')!;
             return (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -92,26 +95,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 <div className="absolute inset-0 p-6 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
                     <span className="text-xs font-mono font-semibold bg-black/60 backdrop-blur-md text-white px-2.5 py-1 rounded-full border border-white/10">
-                      £{service.price}
+                      PELUQUERÍA
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
+                    <h3 className="font-display text-3xl sm:text-4xl font-bold uppercase tracking-tight text-white">
                       {service.name}
                     </h3>
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-amber-300">
-                      PRICING
-                    </div>
+                    <p className="text-zinc-300 text-xs font-sans-body line-clamp-2">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
             );
           })()}
 
-          {/* Card 3: BANGS */}
-          {SERVICES.find(s => s.id === 'bangs') && (() => {
-            const service = SERVICES.find(s => s.id === 'bangs')!;
+          {/* Card 3: KERATINAS */}
+          {SERVICES.find(s => s.id === 'keratinas') && (() => {
+            const service = SERVICES.find(s => s.id === 'keratinas')!;
             return (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -131,26 +134,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 <div className="absolute inset-0 p-6 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
                     <span className="text-xs font-mono font-semibold bg-black/60 backdrop-blur-md text-white px-2.5 py-1 rounded-full border border-white/10">
-                      £{service.price}
+                      TRATAMIENTO
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
+                    <h3 className="font-display text-3xl sm:text-4xl font-bold uppercase tracking-tight text-white">
                       {service.name}
                     </h3>
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-amber-300">
-                      PRICING
-                    </div>
+                    <p className="text-zinc-300 text-xs font-sans-body line-clamp-2">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
             );
           })()}
 
-          {/* Card 4: OMBRÉ */}
-          {SERVICES.find(s => s.id === 'ombre') && (() => {
-            const service = SERVICES.find(s => s.id === 'ombre')!;
+          {/* Card 4: ALISADO PERMANENTE */}
+          {SERVICES.find(s => s.id === 'alisado') && (() => {
+            const service = SERVICES.find(s => s.id === 'alisado')!;
             return (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -170,26 +173,26 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 <div className="absolute inset-0 p-6 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
                     <span className="text-xs font-mono font-semibold bg-black/60 backdrop-blur-md text-white px-2.5 py-1 rounded-full border border-white/10">
-                      £{service.price}
+                      TRATAMIENTO
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
+                    <h3 className="font-display text-3xl sm:text-4xl font-bold uppercase tracking-tight text-white">
                       {service.name}
                     </h3>
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-amber-300">
-                      PRICING
-                    </div>
+                    <p className="text-zinc-300 text-xs font-sans-body line-clamp-2">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>
             );
           })()}
 
-          {/* Card 5: HAIRDO */}
-          {SERVICES.find(s => s.id === 'hairdo') && (() => {
-            const service = SERVICES.find(s => s.id === 'hairdo')!;
+          {/* Card 5: COLOR Y TRATAMIENTOS */}
+          {SERVICES.find(s => s.id === 'color') && (() => {
+            const service = SERVICES.find(s => s.id === 'color')!;
             return (
               <motion.div
                 initial={{ opacity: 0, y: 20 }}
@@ -209,17 +212,17 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 <div className="absolute inset-0 p-6 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
                     <span className="text-xs font-mono font-semibold bg-black/60 backdrop-blur-md text-white px-2.5 py-1 rounded-full border border-white/10">
-                      £{service.price}
+                      COLORACIÓN
                     </span>
                   </div>
 
                   <div className="space-y-2">
-                    <h3 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
+                    <h3 className="font-display text-3xl sm:text-4xl font-bold uppercase tracking-tight text-white">
                       {service.name}
                     </h3>
-                    <div className="text-[11px] font-bold uppercase tracking-widest text-amber-300">
-                      PRICING
-                    </div>
+                    <p className="text-zinc-300 text-xs font-sans-body line-clamp-2">
+                      {service.description}
+                    </p>
                   </div>
                 </div>
               </motion.div>

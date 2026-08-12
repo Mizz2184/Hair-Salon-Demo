@@ -21,21 +21,21 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           >
             <div className="space-y-6">
               
-              {/* Top Tagline / Location */}
+              {/* Top Tagline */}
               <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-widest text-zinc-500 dark:text-zinc-400 uppercase">
                 <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse"></span>
-                ESPECIALISTAS EN RIZOS · SANTA ANA, COSTA RICA
+                ALTA PELUQUERÍA Y MAQUILLAJE PROFESIONAL
               </div>
 
               {/* Main Headline */}
               <h1 className="font-display text-5xl sm:text-7xl xl:text-8xl font-bold tracking-tight text-zinc-900 dark:text-white uppercase leading-[0.92] sm:leading-[0.90]">
-                EL SECRETO DE UNOS<br />
-                RIZOS PERFECTOS<br />
-                EMPIEZA AQUÍ.
+                BELLEZA QUE<br />
+                SE TRANSFORMA<br />
+                EN PRESENCIA.
               </h1>
 
               <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base max-w-lg leading-relaxed pt-2 font-sans-body">
-                Salón especializado en rizos, coloración y transiciones capilares. Vive una experiencia única, diseñada para devolverte la salud y la forma natural de tu cabello — de liso a rizo en 6 meses, con diagnóstico capilar completo desde el primer día.
+                Estudio especializado en alta peluquería y maquillaje glam de alta definición. Cortes, color, keratinas y tratamientos con las mejores marcas — Wella, Schwarzkopf y Kryolan — para una imagen que no pasa desapercibida.
               </p>
             </div>
 
@@ -53,16 +53,16 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 pt-6 border-t border-zinc-200 dark:border-zinc-800">
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white">+7,000</div>
-                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">Seguidores en Comunidad</div>
-                </div>
-                <div>
                   <div className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white">100%</div>
-                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">Diagnóstico Personalizado</div>
+                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">Recomendado</div>
                 </div>
                 <div>
-                  <div className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white">Certificados</div>
-                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">Talleres de Textura</div>
+                  <div className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white">+277</div>
+                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">Reseñas de Clientas</div>
+                </div>
+                <div>
+                  <div className="font-display text-2xl sm:text-3xl font-bold text-zinc-900 dark:text-white">Aliados Oficiales</div>
+                  <div className="text-[11px] uppercase tracking-wider text-zinc-500 font-medium mt-0.5">de Kryolan Costa Rica</div>
                 </div>
               </div>
             </div>
@@ -78,20 +78,20 @@ export const Hero: React.FC<HeroProps> = ({ onOpenBooking }) => {
           >
             <img
               src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?auto=format&fit=crop&q=80&w=1200"
-              alt="Woman with beautiful long hair smiling"
+              alt="JK Studio Alta Peluquería y Maquillaje"
               className="w-full h-full object-cover object-center editorial-img group-hover:scale-105 transition-transform duration-700"
             />
             
             {/* Gradient Overlay for Readable Text */}
             <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent pointer-events-none"></div>
 
-            {/* Overlaid Bottom Typography: "TU CABELLO, TU CONFIANZA" */}
+            {/* Overlaid Bottom Typography */}
             <div className="absolute bottom-6 right-6 left-6 text-right z-10">
               <span className="inline-block text-xs uppercase tracking-widest text-amber-200 font-semibold mb-1">
-                SANTA ANA, COSTA RICA
+                JK STUDIO
               </span>
               <h2 className="font-display text-4xl sm:text-6xl xl:text-7xl font-bold uppercase tracking-tight text-white leading-none drop-shadow-md">
-                TU CABELLO,<br />TU CONFIANZA
+                NO MAQUILLAMOS UN ROSTRO,<br />CREAMOS UNA PRESENCIA
               </h2>
             </div>
           </motion.div>

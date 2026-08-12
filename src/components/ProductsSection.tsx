@@ -112,16 +112,16 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           <div className="flex items-center gap-8 shrink-0">
             <span className="flex items-center gap-2">
               <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              DE LISO A RIZO EN 6 MESES
+              ALTA PELUQUERÍA Y MAQUILLAJE PROFESIONAL
             </span>
             <span className="text-zinc-950">•</span>
-            <span>DIAGNÓSTICO CAPILAR COMPLETO</span>
+            <span>ALIADOS DE KRYOLAN COSTA RICA</span>
             <span className="text-zinc-950">•</span>
-            <span>TALLERES Y ASESORÍAS</span>
+            <span>100% RECOMENDADO</span>
             <span className="text-zinc-950">•</span>
             <span className="flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              VIVE UNA EXPERIENCIA ÚNICA
+              KERATINAS Y ALISADO PERMANENTE
             </span>
             <span className="text-zinc-950">•</span>
             <span>RESERVA TU CITA HOY</span>
@@ -132,16 +132,16 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           <div className="flex items-center gap-8 shrink-0">
             <span className="flex items-center gap-2">
               <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              DE LISO A RIZO EN 6 MESES
+              ALTA PELUQUERÍA Y MAQUILLAJE PROFESIONAL
             </span>
             <span className="text-zinc-950">•</span>
-            <span>DIAGNÓSTICO CAPILAR COMPLETO</span>
+            <span>ALIADOS DE KRYOLAN COSTA RICA</span>
             <span className="text-zinc-950">•</span>
-            <span>TALLERES Y ASESORÍAS</span>
+            <span>100% RECOMENDADO</span>
             <span className="text-zinc-950">•</span>
             <span className="flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              VIVE UNA EXPERIENCIA ÚNICA
+              KERATINAS Y ALISADO PERMANENTE
             </span>
             <span className="text-zinc-950">•</span>
             <span>RESERVA TU CITA HOY</span>
@@ -158,18 +158,18 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-zinc-800 gap-6">
           <div className="space-y-3">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">FORMACIÓN Y ASESORÍA</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">CALIDAD PROFESIONAL</span>
               <span className="w-8 h-[1px] bg-zinc-800"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">TALLERES CERTIFICADOS</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">NUESTRAS MARCAS</span>
             </div>
             <h2 className="font-display text-4xl sm:text-6xl font-bold uppercase tracking-tight text-white leading-none">
-              NUESTROS TALLERES
+              TRABAJAMOS CON LAS MEJORES MARCAS
             </h2>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <p className="text-zinc-400 text-xs sm:text-sm max-w-sm font-sans-body">
-              Más allá del salón, formamos a estilistas en el arte de entender y trabajar texturas rizadas — cursos que hemos completado y ofrecido por tercer año consecutivo.
+              Resultados que se notan empiezan con los productos correctos. En Jk Studio usamos únicamente líneas profesionales reconocidas mundialmente.
             </p>
 
             {/* Horizontal Scroll Navigation Arrows */}
@@ -212,35 +212,34 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           onMouseMove={handleMouseMove}
           className="flex gap-6 overflow-x-auto no-scrollbar pb-8 pt-2 cursor-grab active:cursor-grabbing select-none scroll-smooth"
         >
-          {/* Feature Card 1: Talleres de Textura */}
+          {/* Feature Card 1: Kryolan Featured */}
           <div className="w-[300px] sm:w-[380px] shrink-0 bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700/80 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-amber-400/80 transition-all group">
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-zinc-950">
                 <img
-                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
-                  alt="Talleres de Textura"
+                  src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&q=80&w=800"
+                  alt="Kryolan — Maquillaje Profesional"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <span className="absolute top-3 left-3 bg-amber-400 text-zinc-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
-                  FORMACIÓN CERTIFICADA
+                  MARCA DESTACADA
                 </span>
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400">3ER AÑO CONSECUTIVO</span>
-                <h3 className="font-display text-2xl font-bold uppercase text-white mt-1">TALLERES DE TEXTURA Y CURVATURA</h3>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400">ALIADOS OFICIALES</span>
+                <h3 className="font-display text-2xl font-bold uppercase text-white mt-1">KRYOLAN — MAQUILLAJE PROFESIONAL</h3>
                 <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
-                  Formación especializada para estilistas que quieren entender a fondo el cabello rizado y dominar la técnica de diagnóstico.
+                  Producto de alta definición para un acabado impecable en cualquier ocasión.
                 </p>
               </div>
             </div>
             <div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
-              <span className="font-display text-xs font-bold uppercase tracking-wider text-amber-400">CURSOS PARA ESTILISTAS</span>
+              <span className="font-display text-xs font-bold uppercase tracking-wider text-amber-400">ALTA DEFINICIÓN</span>
               <a
                 href="#services"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase text-white hover:text-amber-300 transition-colors"
               >
-                <span>MÁS INFORMACIÓN</span>
-                <ArrowRight className="w-4 h-4" />
+                <span>Conocer más →</span>
               </a>
             </div>
           </div>
@@ -259,9 +258,6 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
                     alt={product.name}
                     className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                   />
-                  <div className="absolute top-2 right-2 bg-amber-400 text-zinc-950 font-bold text-xs px-2 py-0.5 rounded-xs shadow">
-                    £{product.price}
-                  </div>
                   <div className="absolute bottom-2 left-2 bg-black/60 backdrop-blur-md text-amber-300 text-[10px] font-semibold px-2 py-0.5 rounded-full flex items-center gap-1">
                     <Star className="w-3 h-3 fill-current" />
                     <span>{product.rating.toFixed(1)} ({product.reviewsCount})</span>
@@ -284,45 +280,45 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
               <div className="pt-4 border-t border-zinc-700/50 flex items-center justify-between text-xs mt-4">
                 <span className="text-zinc-400 font-mono text-[11px]">{product.size}</span>
                 <span className="text-amber-300 font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  <span>VER DETALLES</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <span>Conocer más →</span>
                 </span>
               </div>
             </div>
           ))}
 
-          {/* Feature Card 2: True Salon Curls Facebook Partner */}
+          {/* Feature Card 2: Jk Studio Facebook */}
           <div className="w-[300px] sm:w-[360px] shrink-0 bg-gradient-to-br from-amber-500/10 to-zinc-900 border border-amber-500/40 rounded-2xl p-6 flex flex-col justify-between shadow-xl">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-bold uppercase tracking-widest bg-amber-400 text-zinc-950 px-2.5 py-1 rounded-full">
-                  PÁGINA OFICIAL
+                  PÁGINA VERIFICADA
                 </span>
                 <Sparkles className="w-5 h-5 text-amber-400" />
               </div>
 
               <h3 className="font-display text-2xl font-bold uppercase text-white">
-                TRUE SALON CURLS
+                JK STUDIO
               </h3>
 
               <p className="text-zinc-300 text-xs leading-relaxed font-sans-body">
-                Entérate de nuestros últimos casos de éxito de transición, fechas de talleres y tips diarios para el cuidado de tus rizos en Facebook.
+                2.9K seguidores • 100% recomendado (277 reseñas). Visita nuestra página de Facebook o nuestro sitio web oficial.
               </p>
 
               <div className="bg-zinc-900/80 p-3 rounded-xl border border-zinc-800 text-xs text-zinc-300 space-y-1 font-mono">
-                <p>📍 Santa Ana, Costa Rica</p>
-                <p>👥 7.2K Seguidores en Facebook</p>
+                <p>📍 Costa Rica</p>
+                <p>📞 +506 8583 2424</p>
+                <p>✉️ jkstudioatm@gmail.com</p>
               </div>
             </div>
 
             <div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
               <a
-                href="https://www.facebook.com/Truesalonspa/"
+                href="https://jkstudiosalon.negocio.site"
                 target="_blank"
                 rel="noreferrer"
                 className="w-full bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold uppercase tracking-widest text-xs py-3 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
-                <span>VER EN FACEBOOK</span>
+                <span>VER SITIO WEB</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

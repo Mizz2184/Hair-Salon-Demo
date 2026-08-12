@@ -57,7 +57,7 @@ export const PortfolioLightbox: React.FC<PortfolioLightboxProps> = ({ item, onCl
           <div className="md:col-span-5 p-6 sm:p-8 flex flex-col justify-between space-y-6">
             <div className="space-y-4">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
-                LOOKBOOK SPECIFICATION
+                DETALLES DE TRANSFORMACIÓN
               </span>
 
               <h3 className="font-display text-3xl font-bold uppercase tracking-tight leading-none text-white">
@@ -66,7 +66,7 @@ export const PortfolioLightbox: React.FC<PortfolioLightboxProps> = ({ item, onCl
 
               <div className="flex items-center gap-2 text-xs text-zinc-400 border-y border-zinc-800 py-3">
                 <Scissors className="w-4 h-4 text-amber-400" />
-                <span>STYLIST: <strong className="text-white">{item.stylist}</strong></span>
+                <span>ESTUDIO: <strong className="text-white">{item.stylist}</strong></span>
               </div>
 
               <p className="text-zinc-300 text-xs sm:text-sm leading-relaxed font-sans-body">
@@ -90,7 +90,7 @@ export const PortfolioLightbox: React.FC<PortfolioLightboxProps> = ({ item, onCl
                 }}
                 className="w-full bg-white hover:bg-zinc-200 text-zinc-950 font-bold uppercase tracking-widest text-xs py-4 rounded-full transition-all cursor-pointer shadow-lg"
               >
-                REQUEST THIS LOOK
+                RESERVAR ESTE LOOK
               </button>
             </div>
 

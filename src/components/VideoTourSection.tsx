@@ -30,11 +30,14 @@ export const VideoTourSection: React.FC = () => {
             </button>
 
             <span className="text-xs font-bold uppercase tracking-widest text-amber-300">
-              VIRTUAL SALON WALKTHROUGH
+              CONOCE JK STUDIO
             </span>
             <h3 className="font-display text-2xl sm:text-4xl font-bold uppercase tracking-tight text-white mt-1">
-              INSIDE THE MARYLEBONE SANCTUARY
+              ASÍ TRABAJAMOS EN JK STUDIO
             </h3>
+            <p className="text-zinc-300 text-xs sm:text-sm max-w-lg mt-2 font-sans-body">
+              Un vistazo detrás de cámaras a cómo preparamos cada transformación, del diagnóstico al resultado final.
+            </p>
           </div>
         </div>
 

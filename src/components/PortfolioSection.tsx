@@ -13,10 +13,10 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
 
   const categories = [
     { id: 'all', label: 'Todos' },
-    { id: 'transiciones', label: 'Transiciones' },
-    { id: 'color', label: 'Color' },
-    { id: 'diagnostico', label: 'Diagnóstico Capilar' },
-    { id: 'talleres', label: 'Talleres' },
+    { id: 'peluqueria', label: 'Peluquería' },
+    { id: 'glam', label: 'Maquillaje Glam' },
+    { id: 'novias', label: 'Novias & Eventos' },
+    { id: 'tratamientos', label: 'Tratamientos' },
   ];
 
   const filteredItems = activeCategory === 'all' 
@@ -27,7 +27,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
     <section id="portfolio" className="py-20 bg-white dark:bg-zinc-950 transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Top Header matching Reference Image 1 Layout */}
+        {/* Top Header */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center mb-16 pb-12 border-b border-zinc-200 dark:border-zinc-800">
           
           {/* Left top editorial photo */}
@@ -39,13 +39,13 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
           >
             <img
               src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
-              alt="Cuidado de rizos"
+              alt="Jk Studio Trabajos"
               className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 text-white">
-              <p className="text-xs font-semibold tracking-wider uppercase opacity-80">GALERÍA REAL</p>
-              <p className="font-display text-lg uppercase font-bold">TRANSFORMACIONES DE RIZOS</p>
+              <p className="text-xs font-semibold tracking-wider uppercase opacity-80">GALERÍA DE TRABAJOS</p>
+              <p className="font-display text-lg uppercase font-bold">JK STUDIO</p>
             </div>
           </motion.div>
 
@@ -59,7 +59,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
             <div className="flex items-center gap-3">
               <span className="text-xs font-bold uppercase tracking-widest text-amber-500">NUESTRO TRABAJO</span>
               <span className="w-8 h-[1px] bg-zinc-300 dark:bg-zinc-700"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-white">TRANSICIONES & COLOR</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-white">ALTA PELUQUERÍA & MAQUILLAJE</span>
             </div>
 
             <h2 className="font-display text-5xl sm:text-7xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white leading-none">
@@ -67,7 +67,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
             </h2>
 
             <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base max-w-xl font-sans-body">
-              Cada rizo cuenta una historia. Conoce algunas de las transiciones y transformaciones reales de nuestras clientas.
+              Cada rostro y cada corte cuentan una historia. Un vistazo a nuestro trabajo en cabello y maquillaje para bodas, eventos y sesiones fotográficas.
             </p>
 
             {/* Category Filter Tabs */}

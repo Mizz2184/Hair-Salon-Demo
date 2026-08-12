@@ -23,10 +23,10 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
     { label: 'Inicio', href: '#home' },
     { label: 'Servicios', href: '#services' },
     { label: 'Nosotros', href: '#about' },
-    { label: 'Reseñas', href: '#reviews' },
     { label: 'Portafolio', href: '#portfolio' },
-    { label: 'Talleres', href: '#products' },
-    { label: 'Horario', href: '#hours' },
+    { label: 'Maquillaje', href: '#products' },
+    { label: 'Reseñas', href: '#reviews' },
+    { label: 'Contacto', href: '#hours' },
   ];
 
   return (
@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
         {/* Brand Logo */}
         <a href="#home" className="flex items-center gap-2 group">
           <span className="font-display font-bold text-2xl sm:text-3xl tracking-widest text-zinc-900 dark:text-white uppercase transition-colors group-hover:text-zinc-600 dark:group-hover:text-zinc-300">
-            TRUE SALON CURLS
+            JK STUDIO
           </span>
           <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-zinc-900 dark:bg-white"></span>
         </a>

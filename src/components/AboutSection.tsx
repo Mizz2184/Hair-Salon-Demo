@@ -24,31 +24,27 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                 NUESTRA HISTORIA
               </p>
               <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
-                SOMOS TRUE SALON CURLS
+                SOMOS JK STUDIO
               </h2>
             </div>
 
             <p className="text-zinc-300 text-sm sm:text-base leading-relaxed font-sans-body">
-              En True Salon Curls somos maestras y especialistas en rizos, coloración y transiciones capilares. Acompañamos a cada clienta en su proceso de transición de liso a rizo — un camino que puede tomar hasta 6 meses — con diagnóstico capilar completo, planes personalizados y mucho acompañamiento. Creemos que el autoestima se refleja en tus raíces: por eso cada visita es una experiencia pensada para ti.
+              En Jk Studio combinamos la técnica de la alta peluquería con el arte del maquillaje profesional. Ofrecemos cortes para caballeros y damas, keratinas, alisamiento permanente y color con líneas premium como Wella y Schwarzkopf — junto a maquillaje glam de alta definición en alianza con Kryolan Costa Rica. Creemos que cuando la técnica correcta se encuentra con el producto adecuado, la piel y el cabello no se esconden: se transforman.
             </p>
 
             {/* Features list */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Especialistas en Rizos, Color y Transiciones</span>
+                <span>Alta Peluquería: Cortes, Color y Tratamientos</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Diagnóstico Capilar Completo</span>
+                <span>Maquillaje Glam HD con Kryolan</span>
               </div>
-              <div className="flex items-center gap-2.5 text-xs text-zinc-300">
+              <div className="flex items-center gap-2.5 text-xs text-zinc-300 sm:col-span-2">
                 <HeartHandshake className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Talleres y Asesorías para Estilistas</span>
-              </div>
-              <div className="flex items-center gap-2.5 text-xs text-zinc-300">
-                <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                <span>Ubicación Única: Santa Ana, Costa Rica</span>
+                <span>100% Recomendado por Nuestras Clientas</span>
               </div>
             </div>
 
@@ -75,13 +71,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4] shadow-lg group">
               <img
                 src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1000"
-                alt="True Salon Curls Espacio"
+                alt="Jk Studio Espacio"
                 className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-xs uppercase tracking-wider font-semibold text-zinc-300">Ubicación Exclusiva</p>
-                <p className="text-sm font-bold text-white uppercase">NUESTRO ESPACIO, SANTA ANA</p>
+                <p className="text-xs uppercase tracking-wider font-semibold text-amber-400">INSTALACIONES</p>
+                <p className="text-sm font-bold text-white uppercase">NUESTRO ESTUDIO</p>
               </div>
             </div>
 
@@ -90,22 +86,22 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
                   src="/746807842_18607939687037038_2671941514086192163_n.jpg"
-                  alt="Salón de Color True Salon Curls"
+                  alt="Zona de Maquillaje Profesional"
                   className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-
+                  ZONA DE MAQUILLAJE PROFESIONAL
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
                   src="/748088944_18607939672037038_2828511024218819537_n.jpg"
-                  alt="Zona de Lavado e Hidratación Rizada"
+                  alt="NUESTRO ESTUDIO"
                   className="w-full h-full object-cover object-top editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-
+                  NUESTRO ESTUDIO
                 </div>
               </div>
             </div>

@@ -61,7 +61,6 @@ export const ProductDrawer: React.FC<ProductDrawerProps> = ({ product, onClose }
             </h3>
 
             <div className="flex items-center justify-between pt-1">
-              <span className="font-mono text-2xl font-bold text-zinc-900 dark:text-white">£{product.price}</span>
               <span className="text-xs text-zinc-500 font-mono">{product.size}</span>
             </div>
           </div>
@@ -73,7 +72,7 @@ export const ProductDrawer: React.FC<ProductDrawerProps> = ({ product, onClose }
 
           {/* Key Benefits */}
           <div className="space-y-2 pt-2">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500">KEY BENEFITS</h4>
+            <h4 className="text-xs font-bold uppercase tracking-wider text-zinc-500">BENEFICIOS CLAVE</h4>
             <div className="grid grid-cols-2 gap-2">
               {product.benefits.map((benefit, idx) => (
                 <div key={idx} className="flex items-center gap-2 text-xs font-semibold text-zinc-700 dark:text-zinc-300 bg-zinc-100 dark:bg-zinc-900 p-2.5 rounded-lg">
@@ -84,45 +83,15 @@ export const ProductDrawer: React.FC<ProductDrawerProps> = ({ product, onClose }
             </div>
           </div>
 
-          {/* Quantity Selector */}
-          <div className="flex items-center gap-4 pt-4 border-t border-zinc-200 dark:border-zinc-800">
-            <span className="text-xs font-bold uppercase tracking-wider">Quantity:</span>
-            <div className="flex items-center border border-zinc-300 dark:border-zinc-700 rounded-lg overflow-hidden">
-              <button
-                onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                className="px-3 py-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 font-bold"
-              >-</button>
-              <span className="px-4 text-sm font-bold font-mono">{quantity}</span>
-              <button
-                onClick={() => setQuantity(quantity + 1)}
-                className="px-3 py-1.5 hover:bg-zinc-100 dark:hover:bg-zinc-800 font-bold"
-              >+</button>
-            </div>
-          </div>
-
         </div>
 
         {/* Footer Actions */}
         <div className="p-6 bg-zinc-50 dark:bg-zinc-900 border-t border-zinc-200 dark:border-zinc-800 flex items-center gap-4">
           <button
-            onClick={handleAddToCart}
-            className={`flex-1 font-bold uppercase tracking-widest text-xs py-4 rounded-full transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg ${
-              added 
-                ? 'bg-emerald-600 text-white' 
-                : 'bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 hover:opacity-90'
-            }`}
+            onClick={onClose}
+            className="flex-1 font-bold uppercase tracking-widest text-xs py-4 rounded-full transition-all flex items-center justify-center gap-2 cursor-pointer shadow-lg bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 hover:opacity-90"
           >
-            {added ? (
-              <>
-                <Check className="w-4 h-4" />
-                <span>ADDED TO BAG!</span>
-              </>
-            ) : (
-              <>
-                <ShoppingBag className="w-4 h-4" />
-                <span>PURCHASE — £{product.price * quantity}</span>
-              </>
-            )}
+            <span>CONOCER MÁS</span>
           </button>
         </div>
 
