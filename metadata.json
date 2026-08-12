@@ -1,0 +1,6 @@
+{
+  "name": "Strand Haven - Luxury Hair Salon & Dynamic Portfolio",
+  "description": "Editorial luxury hair salon website and dynamic portfolio with interactive service cards, lookbook, booking system, and dark mode.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

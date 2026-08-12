@@ -1,0 +1,99 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .font-display {
+    font-family: 'Oswald', 'Bebas Neue', sans-serif;
+  }
+  .font-bebas {
+    font-family: 'Bebas Neue', sans-serif;
+  }
+  .font-serif-title {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+  .font-sans-body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Seamless Marquee Keyframe Animations */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 25s linear infinite;
+}
+
+.animate-marquee-slow {
+  display: flex;
+  width: max-content;
+  animation: marquee 38s linear infinite;
+}
+
+.animate-marquee-fast {
+  display: flex;
+  width: max-content;
+  animation: marquee 14s linear infinite;
+}
+
+.animate-marquee:hover,
+.animate-marquee-slow:hover,
+.animate-marquee-fast:hover {
+  animation-play-state: paused;
+}
+
+/* Hide scrollbars for clean horizontal slider */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Custom scrollbar for sleek editorial vibe */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0,0,0,0.1);
+}
+
+::-webkit-scrollbar-thumb {
+  background: #a1a1aa;
+  border-radius: 3px;
+}
+
+.dark ::-webkit-scrollbar-thumb {
+  background: #3f3f46;
+}
+
+/* Custom image filter effect for editorial look */
+.editorial-img {
+  filter: contrast(1.05) saturate(0.95);
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.6s ease;
+}
+
+.editorial-img:hover {
+  transform: scale(1.03);
+  filter: contrast(1.1) saturate(1.05);
+}
+
