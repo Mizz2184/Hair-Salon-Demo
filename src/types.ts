@@ -1,8 +1,9 @@
 export interface ServiceItem {
   id: string;
   name: string;
-  category: 'cut' | 'color' | 'styling' | 'treatment';
+  category: 'cut' | 'color' | 'styling' | 'treatment' | 'care' | 'education' | string;
   price: number;
+  priceFormat?: string;
   durationMinutes: number;
   description: string;
   image: string;
@@ -12,7 +13,7 @@ export interface ServiceItem {
 export interface PortfolioItem {
   id: string;
   title: string;
-  category: 'hairstyles' | 'color' | 'balayage' | 'editorial';
+  category: 'hairstyles' | 'color' | 'balayage' | 'editorial' | 'rizos' | 'transiciones' | 'diagnostico' | 'talleres' | string;
   stylist: string;
   image: string;
   beforeImage?: string;

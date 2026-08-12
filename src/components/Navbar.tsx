@@ -20,13 +20,13 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
   }, []);
 
   const navLinks = [
-    { label: 'Home', href: '#home' },
-    { label: 'Pricing', href: '#services' },
-    { label: 'About', href: '#about' },
-    { label: 'Reviews', href: '#reviews' },
-    { label: 'Portfolio', href: '#portfolio' },
-    { label: 'Products', href: '#products' },
-    { label: 'Hours', href: '#hours' },
+    { label: 'Inicio', href: '#home' },
+    { label: 'Servicios', href: '#services' },
+    { label: 'Nosotros', href: '#about' },
+    { label: 'Reseñas', href: '#reviews' },
+    { label: 'Portafolio', href: '#portfolio' },
+    { label: 'Talleres', href: '#products' },
+    { label: 'Horario', href: '#hours' },
   ];
 
   return (
@@ -40,7 +40,7 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
         {/* Brand Logo */}
         <a href="#home" className="flex items-center gap-2 group">
           <span className="font-display font-bold text-2xl sm:text-3xl tracking-widest text-zinc-900 dark:text-white uppercase transition-colors group-hover:text-zinc-600 dark:group-hover:text-zinc-300">
-            STRAND HAVEN
+            TRUE SALON CURLS
           </span>
           <span className="hidden sm:inline-block w-1.5 h-1.5 rounded-full bg-zinc-900 dark:bg-white"></span>
         </a>
@@ -65,10 +65,14 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
           <button
             onClick={() => setDarkMode(prev => !prev)}
             aria-label="Toggle Theme"
-            className="p-2 rounded-full border border-zinc-300 dark:border-zinc-700 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-100 dark:hover:bg-zinc-800/60 transition-all cursor-pointer"
-            title={darkMode ? 'Switch to Light Mode' : 'Switch to Dark Mode'}
+            className="p-2.5 rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-100/80 dark:bg-zinc-900/80 text-zinc-800 dark:text-zinc-200 hover:bg-zinc-200 dark:hover:bg-zinc-800 transition-all cursor-pointer flex items-center justify-center gap-1.5 shadow-2xs"
+            title={darkMode ? 'Cambiar a modo claro' : 'Cambiar a modo oscuro'}
           >
-            {darkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-zinc-700" />}
+            {darkMode ? (
+              <Sun className="w-4 h-4 text-amber-400" />
+            ) : (
+              <Moon className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />
+            )}
           </button>
 
           {/* Book Now Button */}
@@ -76,7 +80,7 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
             onClick={() => onOpenBooking()}
             className="hidden sm:inline-flex items-center justify-center bg-zinc-900 hover:bg-zinc-800 dark:bg-white dark:hover:bg-zinc-100 text-white dark:text-zinc-900 text-xs tracking-widest font-bold uppercase py-2.5 px-6 rounded-full transition-all shadow-sm transform active:scale-95 cursor-pointer"
           >
-            BOOK NOW
+            RESERVAR
           </button>
 
           {/* Mobile Menu Toggle Button */}
@@ -104,14 +108,28 @@ export const Navbar: React.FC<NavbarProps> = ({ darkMode, setDarkMode, onOpenBoo
                 {link.label}
               </a>
             ))}
+
+            <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 flex items-center justify-between">
+              <span className="text-xs uppercase tracking-wider font-bold text-zinc-600 dark:text-zinc-400">
+                Tema: {darkMode ? 'Modo Oscuro' : 'Modo Claro'}
+              </span>
+              <button
+                onClick={() => setDarkMode(prev => !prev)}
+                className="flex items-center gap-2 text-xs font-bold uppercase px-4 py-2 rounded-full border border-zinc-300 dark:border-zinc-700 bg-zinc-100 dark:bg-zinc-900 text-zinc-800 dark:text-zinc-200 cursor-pointer"
+              >
+                {darkMode ? <Sun className="w-4 h-4 text-amber-400" /> : <Moon className="w-4 h-4 text-zinc-700" />}
+                <span>{darkMode ? 'Modo Claro' : 'Modo Oscuro'}</span>
+              </button>
+            </div>
+
             <button
               onClick={() => {
                 setMobileMenuOpen(false);
                 onOpenBooking();
               }}
-              className="mt-4 w-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold uppercase tracking-widest text-sm py-3 rounded-full text-center"
+              className="mt-2 w-full bg-zinc-900 dark:bg-white text-white dark:text-zinc-900 font-bold uppercase tracking-widest text-sm py-3 rounded-full text-center cursor-pointer"
             >
-              BOOK NOW
+              RESERVAR CITA
             </button>
           </div>
         </div>

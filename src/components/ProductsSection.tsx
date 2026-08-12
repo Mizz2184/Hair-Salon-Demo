@@ -112,18 +112,19 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           <div className="flex items-center gap-8 shrink-0">
             <span className="flex items-center gap-2">
               <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              KÉRASTASE SPRING GIFT SETS: SAVE 25% ON NORMAL RETAIL PRICE
-              <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
+              DE LISO A RIZO EN 6 MESES
             </span>
             <span className="text-zinc-950">•</span>
-            <span>STRAND HAVEN BOTANICAL NECTAR & SILK SERUMS AVAILABLE IN SALON & ONLINE</span>
+            <span>DIAGNÓSTICO CAPILAR COMPLETO</span>
             <span className="text-zinc-950">•</span>
-            <span>FREE COMPLIMENTARY EXPRESS SHIPPING ON ORDERS OVER £75</span>
+            <span>TALLERES Y ASESORÍAS</span>
             <span className="text-zinc-950">•</span>
             <span className="flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              TRUE SALON & SPA SPECIALTY KERATIN & BALAYAGE TREATMENTS NOW OPEN
+              VIVE UNA EXPERIENCIA ÚNICA
             </span>
+            <span className="text-zinc-950">•</span>
+            <span>RESERVA TU CITA HOY</span>
             <span className="text-zinc-950">•</span>
           </div>
 
@@ -131,18 +132,19 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           <div className="flex items-center gap-8 shrink-0">
             <span className="flex items-center gap-2">
               <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              KÉRASTASE SPRING GIFT SETS: SAVE 25% ON NORMAL RETAIL PRICE
-              <Star className="w-3.5 h-3.5 fill-current text-zinc-950" />
+              DE LISO A RIZO EN 6 MESES
             </span>
             <span className="text-zinc-950">•</span>
-            <span>STRAND HAVEN BOTANICAL NECTAR & SILK SERUMS AVAILABLE IN SALON & ONLINE</span>
+            <span>DIAGNÓSTICO CAPILAR COMPLETO</span>
             <span className="text-zinc-950">•</span>
-            <span>FREE COMPLIMENTARY EXPRESS SHIPPING ON ORDERS OVER £75</span>
+            <span>TALLERES Y ASESORÍAS</span>
             <span className="text-zinc-950">•</span>
             <span className="flex items-center gap-2">
               <Sparkles className="w-3.5 h-3.5 fill-current text-zinc-950" />
-              TRUE SALON & SPA SPECIALTY KERATIN & BALAYAGE TREATMENTS NOW OPEN
+              VIVE UNA EXPERIENCIA ÚNICA
             </span>
+            <span className="text-zinc-950">•</span>
+            <span>RESERVA TU CITA HOY</span>
             <span className="text-zinc-950">•</span>
           </div>
         </div>
@@ -156,18 +158,18 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-zinc-800 gap-6">
           <div className="space-y-3">
             <div className="flex items-center gap-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">( 03 )</span>
-              <span className="w-8 h-[1px] bg-zinc-700"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">APOTHECARY & PRODUCTS</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">FORMACIÓN Y ASESORÍA</span>
+              <span className="w-8 h-[1px] bg-zinc-800"></span>
+              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400">TALLERES CERTIFICADOS</span>
             </div>
             <h2 className="font-display text-4xl sm:text-6xl font-bold uppercase tracking-tight text-white leading-none">
-              OUR PRODUCTS & OFFERS
+              NUESTROS TALLERES
             </h2>
           </div>
 
           <div className="flex flex-col sm:flex-row items-start sm:items-center gap-4">
             <p className="text-zinc-400 text-xs sm:text-sm max-w-sm font-sans-body">
-              Swipe or drag horizontally to discover apothecary elixirs, gift sets, and specialized treatments.
+              Más allá del salón, formamos a estilistas en el arte de entender y trabajar texturas rizadas — cursos que hemos completado y ofrecido por tercer año consecutivo.
             </p>
 
             {/* Horizontal Scroll Navigation Arrows */}
@@ -210,34 +212,34 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
           onMouseMove={handleMouseMove}
           className="flex gap-6 overflow-x-auto no-scrollbar pb-8 pt-2 cursor-grab active:cursor-grabbing select-none scroll-smooth"
         >
-          {/* Feature Card 1: Strand Haven Apothecary */}
+          {/* Feature Card 1: Talleres de Textura */}
           <div className="w-[300px] sm:w-[380px] shrink-0 bg-gradient-to-br from-zinc-800 to-zinc-900 border border-zinc-700/80 rounded-2xl p-6 flex flex-col justify-between shadow-xl hover:border-amber-400/80 transition-all group">
             <div className="space-y-4">
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] bg-zinc-950">
                 <img
-                  src="https://images.unsplash.com/photo-1608248597261-e4d0450cbf13?auto=format&fit=crop&q=80&w=800"
-                  alt="Apothecary"
+                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
+                  alt="Talleres de Textura"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
                 <span className="absolute top-3 left-3 bg-amber-400 text-zinc-950 text-[10px] font-bold uppercase tracking-widest px-2.5 py-1 rounded-full">
-                  BEST SELLER
+                  FORMACIÓN CERTIFICADA
                 </span>
               </div>
               <div>
-                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400">SIGNATURE SERIES</span>
-                <h3 className="font-display text-2xl font-bold uppercase text-white mt-1">STRAND HAVEN APOTHECARY</h3>
+                <span className="text-[10px] font-bold uppercase tracking-widest text-amber-400">3ER AÑO CONSECUTIVO</span>
+                <h3 className="font-display text-2xl font-bold uppercase text-white mt-1">TALLERES DE TEXTURA Y CURVATURA</h3>
                 <p className="text-zinc-400 text-xs mt-2 leading-relaxed">
-                  Crafted with organic cold-pressed botanicals, French cashmere protein, and golden argan elixirs.
+                  Formación especializada para estilistas que quieren entender a fondo el cabello rizado y dominar la técnica de diagnóstico.
                 </p>
               </div>
             </div>
             <div className="pt-6 border-t border-zinc-800 flex items-center justify-between">
-              <span className="font-display text-xl font-bold text-amber-400">FROM £48</span>
+              <span className="font-display text-xs font-bold uppercase tracking-wider text-amber-400">CURSOS PARA ESTILISTAS</span>
               <a
                 href="#services"
                 className="inline-flex items-center gap-1.5 text-xs font-bold uppercase text-white hover:text-amber-300 transition-colors"
               >
-                <span>EXPLORE RANGE</span>
+                <span>MÁS INFORMACIÓN</span>
                 <ArrowRight className="w-4 h-4" />
               </a>
             </div>
@@ -282,34 +284,34 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
               <div className="pt-4 border-t border-zinc-700/50 flex items-center justify-between text-xs mt-4">
                 <span className="text-zinc-400 font-mono text-[11px]">{product.size}</span>
                 <span className="text-amber-300 font-bold uppercase tracking-wider flex items-center gap-1 group-hover:translate-x-1 transition-transform">
-                  <span>QUICK VIEW</span>
+                  <span>VER DETALLES</span>
                   <ArrowRight className="w-3.5 h-3.5" />
                 </span>
               </div>
             </div>
           ))}
 
-          {/* Feature Card 2: True Salon & Spa Special Offers Card */}
+          {/* Feature Card 2: True Salon Curls Facebook Partner */}
           <div className="w-[300px] sm:w-[360px] shrink-0 bg-gradient-to-br from-amber-500/10 to-zinc-900 border border-amber-500/40 rounded-2xl p-6 flex flex-col justify-between shadow-xl">
             <div className="space-y-4">
               <div className="flex items-center justify-between">
                 <span className="text-[10px] font-bold uppercase tracking-widest bg-amber-400 text-zinc-950 px-2.5 py-1 rounded-full">
-                  FEATURED PARTNER
+                  PÁGINA OFICIAL
                 </span>
                 <Sparkles className="w-5 h-5 text-amber-400" />
               </div>
 
               <h3 className="font-display text-2xl font-bold uppercase text-white">
-                TRUE SALON & SPA
+                TRUE SALON CURLS
               </h3>
 
               <p className="text-zinc-300 text-xs leading-relaxed font-sans-body">
-                Discover specialized curl restoration, organic texture spa treatments, balayage glazes, and bridal packages from True Salon & Spa.
+                Entérate de nuestros últimos casos de éxito de transición, fechas de talleres y tips diarios para el cuidado de tus rizos en Facebook.
               </p>
 
               <div className="bg-zinc-900/80 p-3 rounded-xl border border-zinc-800 text-xs text-zinc-300 space-y-1 font-mono">
-                <p>📍 Specializing in Curl & Texture Care</p>
-                <p>📞 Direct Reservations Available</p>
+                <p>📍 Santa Ana, Costa Rica</p>
+                <p>👥 7.2K Seguidores en Facebook</p>
               </div>
             </div>
 
@@ -320,7 +322,7 @@ export const ProductsSection: React.FC<ProductsSectionProps> = ({ onSelectProduc
                 rel="noreferrer"
                 className="w-full bg-amber-400 hover:bg-amber-300 text-zinc-950 font-bold uppercase tracking-widest text-xs py-3 px-4 rounded-xl transition-all text-center flex items-center justify-center gap-2 cursor-pointer shadow-md"
               >
-                <span>VISIT FACEBOOK PAGE</span>
+                <span>VER EN FACEBOOK</span>
                 <ExternalLink className="w-3.5 h-3.5" />
               </a>
             </div>

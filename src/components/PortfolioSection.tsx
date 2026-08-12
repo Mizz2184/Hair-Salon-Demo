@@ -12,11 +12,11 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
   const [activeCategory, setActiveCategory] = useState<string>('all');
 
   const categories = [
-    { id: 'all', label: 'All Projects' },
-    { id: 'hairstyles', label: 'Hairstyles' },
-    { id: 'balayage', label: 'Balayage' },
-    { id: 'color', label: 'Color Transformations' },
-    { id: 'editorial', label: 'Editorial' },
+    { id: 'all', label: 'Todos' },
+    { id: 'transiciones', label: 'Transiciones' },
+    { id: 'color', label: 'Color' },
+    { id: 'diagnostico', label: 'Diagnóstico Capilar' },
+    { id: 'talleres', label: 'Talleres' },
   ];
 
   const filteredItems = activeCategory === 'all' 
@@ -39,13 +39,13 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
           >
             <img
               src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
-              alt="Stylist performing haircut"
+              alt="Cuidado de rizos"
               className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
             <div className="absolute bottom-4 left-4 text-white">
-              <p className="text-xs font-semibold tracking-wider uppercase opacity-80">( 01 ) LOOKBOOK ARCHIVE</p>
-              <p className="font-display text-lg uppercase font-bold">HAIR ARTISTRY IN MOTION</p>
+              <p className="text-xs font-semibold tracking-wider uppercase opacity-80">GALERÍA REAL</p>
+              <p className="font-display text-lg uppercase font-bold">TRANSFORMACIONES DE RIZOS</p>
             </div>
           </motion.div>
 
@@ -57,17 +57,17 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
             className="lg:col-span-7 space-y-4"
           >
             <div className="flex items-center gap-3">
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">( 01 ) ( 02 )</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-500">NUESTRO TRABAJO</span>
               <span className="w-8 h-[1px] bg-zinc-300 dark:bg-zinc-700"></span>
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-white">HAIRSTYLES / REVIEWS</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-zinc-900 dark:text-white">TRANSICIONES & COLOR</span>
             </div>
 
             <h2 className="font-display text-5xl sm:text-7xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white leading-none">
-              THE PORTFOLIO
+              TRANSFORMACIONES
             </h2>
 
             <p className="text-zinc-600 dark:text-zinc-400 text-sm sm:text-base max-w-xl font-sans-body">
-              Explore our gallery of transformative hair design, precision cut architecture, and luminous color formulas created by Strand Haven master stylists.
+              Cada rizo cuenta una historia. Conoce algunas de las transiciones y transformaciones reales de nuestras clientas.
             </p>
 
             {/* Category Filter Tabs */}
@@ -158,7 +158,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({ onSelectPort
                     </div>
 
                     <span className="text-xs font-bold uppercase tracking-wider text-zinc-900 dark:text-white underline underline-offset-4 group-hover:text-amber-500 transition-colors">
-                      INSPECT LOOK
+                      Ver transformación →
                     </span>
                   </div>
                 </div>

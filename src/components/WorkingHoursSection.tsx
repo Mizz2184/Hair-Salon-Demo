@@ -35,37 +35,37 @@ export const WorkingHoursSection: React.FC<WorkingHoursSectionProps> = ({ onSele
             className="lg:col-span-6 space-y-8"
           >
             <div>
-              <span className="text-xs font-bold uppercase tracking-widest text-zinc-400 dark:text-zinc-500">
-                LONDON • SINCE 2008
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-500 font-semibold">
+                SANTA ANA, COSTA RICA
               </span>
               <h2 className="font-display text-5xl sm:text-7xl font-bold uppercase tracking-tight text-zinc-900 dark:text-white mt-1">
-                WORKING HOURS
+                HORARIO Y CITAS
               </h2>
             </div>
 
             {/* Schedule Table */}
             <div className="space-y-4 pt-2">
               <div className="flex items-center justify-between py-3 border-b border-zinc-200 dark:border-zinc-800">
-                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">WORKING DAYS</span>
-                <span className="font-mono text-sm font-semibold text-zinc-700 dark:text-zinc-300">9AM - 9PM</span>
+                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">LUNES A SÁBADO</span>
+                <span className="font-mono text-sm font-semibold text-amber-600 dark:text-amber-400">PRÓXIMAMENTE (OPENING SOON)</span>
               </div>
 
               <div className="flex items-center justify-between py-3 border-b border-zinc-200 dark:border-zinc-800">
-                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">SATURDAY</span>
-                <span className="font-mono text-sm font-semibold text-zinc-700 dark:text-zinc-300">10AM - 8PM</span>
-              </div>
-
-              <div className="flex items-center justify-between py-3 border-b border-zinc-200 dark:border-zinc-800">
-                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">SUNDAY</span>
-                <span className="font-mono text-sm font-semibold text-red-600 dark:text-red-400 uppercase">Closed</span>
+                <span className="font-bold uppercase tracking-wider text-sm text-zinc-900 dark:text-white">DOMINGO</span>
+                <span className="font-mono text-sm font-semibold text-zinc-500 uppercase">POR CONFIRMAR</span>
               </div>
             </div>
 
-            {/* Footnote Disclosures matching exact screenshot text */}
-            <div className="space-y-2 pt-4 text-[11px] text-zinc-500 dark:text-zinc-400 uppercase leading-relaxed font-sans-body">
-              <p>* FOR COLOUR APPOINTMENTS PLEASE BE AWARE OF OUR 48HR SKIN TEST REQUIREMENT</p>
-              <p>* PLEASE BE AWARE THAT A DEPOSIT WILL BE REQUIRED TO SECURE YOUR APPOINTMENT</p>
-              <p>* WE REQUIRE A MINIMUM OF 24HRS NOTICE OF CANCELLATION AND RESERVE THE RIGHT TO CHARGE FOR THE FULL APPOINTMENT</p>
+            <div className="p-4 bg-amber-500/10 border border-amber-500/30 rounded-xl text-xs text-zinc-700 dark:text-zinc-300 font-sans-body">
+              <p className="font-semibold text-amber-700 dark:text-amber-300 mb-1">ℹ️ Nota de Apertura:</p>
+              <p>Nuestra página oficial de Facebook indica "Próximamente". Puedes seleccionar una fecha previa en el calendario o solicitar tu cita por mensaje para coordinar tu evaluación.</p>
+            </div>
+
+            {/* Footnote Disclosures */}
+            <div className="space-y-2 pt-2 text-[11px] text-zinc-500 dark:text-zinc-400 uppercase leading-relaxed font-sans-body">
+              <p>* PARA SERVICIOS DE COLORACIÓN SE REQUIERE PRUEBA DE PARCHE DE PIEL 48 HORAS ANTES</p>
+              <p>* SE SOLICITA UN DEPÓSITO PARA CONFIRMAR Y ASEGURAR TU CITA</p>
+              <p>* CANCELACIONES CON UN MÍNIMO DE 24 HORAS DE ANTICIPACIÓN</p>
             </div>
           </motion.div>
 
@@ -140,7 +140,7 @@ export const WorkingHoursSection: React.FC<WorkingHoursSectionProps> = ({ onSele
 
             {/* Calendar Footer hint */}
             <div className="mt-6 pt-4 border-t border-zinc-200 dark:border-zinc-800 text-center text-xs text-zinc-500 dark:text-zinc-400">
-              Click any available date to reserve your slot directly.
+              Haz clic en una fecha disponible para iniciar la reserva de tu cita.
             </div>
 
           </motion.div>

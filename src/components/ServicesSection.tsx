@@ -15,16 +15,16 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
     <section id="services" className="py-24 bg-zinc-950 text-white relative overflow-hidden transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Giant Centered Headline matching Reference Image */}
+        {/* Giant Centered Headline */}
         <div className="text-center mb-16 space-y-3">
           <span className="text-xs font-bold uppercase tracking-widest text-amber-400">
-            EXPERIENCE BESPOKE LUXURY
+            NUESTROS SERVICIOS
           </span>
           <h2 className="font-display text-6xl sm:text-8xl font-bold uppercase tracking-tight text-white leading-none">
-            OUR SERVICES
+            SERVICIOS Y PRECIOS
           </h2>
           <p className="text-zinc-400 text-sm sm:text-base max-w-xl mx-auto font-sans-body">
-            Custom tailored treatments designed by our master stylists. Select any service to review pricing and reserve your appointment.
+            Diagnóstico capilar, cortes en seco para rizos, coloración respetuosa y acompañamiento de transición de liso a rizo.
           </p>
         </div>
 
@@ -52,7 +52,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 <div className="absolute inset-0 p-8 flex flex-col justify-between text-center items-center">
                   <div className="w-full text-right">
                     <span className="text-xs font-mono font-semibold bg-white/20 backdrop-blur-md text-white px-3 py-1 rounded-full border border-white/20">
-                      FROM £{service.price}
+                      {service.priceFormat}
                     </span>
                   </div>
 
@@ -61,7 +61,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                       {service.name}
                     </h3>
                     <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-widest text-amber-300 hover:text-white transition-colors underline underline-offset-4">
-                      <span>PRICING & DETAILS</span>
+                      <span>PRECIOS Y DETALLES</span>
                       <ChevronRight className="w-4 h-4" />
                     </div>
                   </div>
@@ -228,13 +228,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
 
         </div>
 
-        {/* Center Bottom "BOOK NOW" Pill Button matching Reference Image */}
+        {/* Center Bottom "RESERVAR CITA" Pill Button */}
         <div className="mt-16 text-center">
           <button
             onClick={() => onOpenBooking()}
             className="group inline-flex items-center gap-3 bg-white hover:bg-zinc-100 text-zinc-950 font-bold uppercase tracking-widest text-sm px-10 py-4 rounded-full transition-all transform active:scale-95 shadow-2xl cursor-pointer"
           >
-            <span>BOOK NOW</span>
+            <span>Reservar cita</span>
             <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </button>
         </div>
@@ -247,13 +247,13 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
           <div className="bg-zinc-900 border border-zinc-800 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl p-6 relative text-white">
             <button
               onClick={() => setSelectedServiceModal(null)}
-              className="absolute top-4 right-4 text-zinc-400 hover:text-white p-2 text-xl"
+              className="absolute top-4 right-4 text-zinc-400 hover:text-white p-2 text-xl cursor-pointer"
             >
               ✕
             </button>
 
             <div className="space-y-4">
-              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">SERVICE SPECIFICATION</span>
+              <span className="text-xs font-bold uppercase tracking-widest text-amber-400">ESPECIFICACIÓN DEL SERVICIO</span>
               <h3 className="font-display text-4xl font-bold uppercase text-white">{selectedServiceModal.name}</h3>
               
               <div className="flex items-center gap-4 text-sm font-semibold text-zinc-300 bg-zinc-800/80 p-3 rounded-xl border border-zinc-700/60">
@@ -263,7 +263,7 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                 </div>
                 <span>•</span>
                 <div className="text-amber-300 font-bold">
-                  FROM £{selectedServiceModal.price}
+                  {selectedServiceModal.priceFormat}
                 </div>
               </div>
 
@@ -278,9 +278,9 @@ export const ServicesSection: React.FC<ServicesSectionProps> = ({ onOpenBooking 
                     setSelectedServiceModal(null);
                     onOpenBooking(id);
                   }}
-                  className="flex-1 bg-white text-zinc-950 font-bold uppercase tracking-wider text-xs py-3.5 rounded-full hover:bg-zinc-100 text-center"
+                  className="flex-1 bg-white text-zinc-950 font-bold uppercase tracking-wider text-xs py-3.5 rounded-full hover:bg-zinc-100 text-center cursor-pointer"
                 >
-                  SELECT & BOOK THIS SERVICE
+                  Reservar este servicio
                 </button>
               </div>
             </div>

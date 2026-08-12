@@ -50,8 +50,8 @@ export const BookingModal: React.FC<BookingModalProps> = ({
         {/* Header Bar */}
         <div className="bg-zinc-900 text-white p-6 sm:p-8 flex items-center justify-between relative">
           <div>
-            <span className="text-xs font-bold uppercase tracking-widest text-amber-400">ONLINE RESERVATION</span>
-            <h2 className="font-display text-3xl sm:text-4xl font-bold uppercase mt-1">RESERVE AT STRAND HAVEN</h2>
+            <span className="text-xs font-bold uppercase tracking-widest text-amber-400">RESERVA EN LÍNEA</span>
+            <h2 className="font-display text-3xl sm:text-4xl font-bold uppercase mt-1">RESERVA EN TRUE SALON CURLS</h2>
           </div>
 
           <button
@@ -69,19 +69,19 @@ export const BookingModal: React.FC<BookingModalProps> = ({
             <div>
               {/* Progress Stepper Bar */}
               <div className="flex items-center justify-between mb-8 pb-4 border-b border-zinc-200 dark:border-zinc-800 text-xs font-bold uppercase tracking-wider">
-                <span className={step >= 1 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>1. Service</span>
+                <span className={step >= 1 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>1. Servicio</span>
                 <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                <span className={step >= 2 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>2. Stylist</span>
+                <span className={step >= 2 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>2. Estilista</span>
                 <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                <span className={step >= 3 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>3. Date & Time</span>
+                <span className={step >= 3 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>3. Fecha y hora</span>
                 <span className="text-zinc-300 dark:text-zinc-700">•</span>
-                <span className={step >= 4 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>4. Details</span>
+                <span className={step >= 4 ? 'text-amber-600 dark:text-amber-400' : 'text-zinc-400'}>4. Datos</span>
               </div>
 
               {/* Step 1: Select Service */}
               {step === 1 && (
                 <div className="space-y-4">
-                  <h3 className="font-display text-2xl font-bold uppercase">SELECT TREATMENT</h3>
+                  <h3 className="font-display text-2xl font-bold uppercase">SELECCIONA TU TRATAMIENTO</h3>
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     {SERVICES.map((serv) => (
                       <div
@@ -97,7 +97,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                           <p className="font-display text-lg uppercase font-bold">{serv.name}</p>
                           <p className="text-xs opacity-75">{serv.durationMinutes} Mins</p>
                         </div>
-                        <span className="font-mono text-sm font-bold">£{serv.price}</span>
+                        <span className="font-mono text-xs font-bold">{serv.priceFormat}</span>
                       </div>
                     ))}
                   </div>
@@ -107,7 +107,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       onClick={() => setStep(2)}
                       className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase text-xs tracking-wider px-8 py-3.5 rounded-full hover:opacity-90 flex items-center gap-2 cursor-pointer"
                     >
-                      <span>CONTINUE TO STYLIST</span>
+                      <span>CONTINUAR A ESTILISTA</span>
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -117,7 +117,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {/* Step 2: Select Stylist */}
               {step === 2 && (
                 <div className="space-y-4">
-                  <h3 className="font-display text-2xl font-bold uppercase">SELECT YOUR ARTIST</h3>
+                  <h3 className="font-display text-2xl font-bold uppercase">SELECCIONA TU ESPECIALISTA</h3>
                   <div className="space-y-3">
                     {STYLISTS.map((st) => (
                       <div
@@ -148,13 +148,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       onClick={() => setStep(1)}
                       className="border border-zinc-300 dark:border-zinc-700 font-bold text-xs uppercase px-6 py-3.5 rounded-full hover:bg-zinc-100 dark:hover:bg-zinc-800 cursor-pointer"
                     >
-                      BACK
+                      ATRÁS
                     </button>
                     <button
                       onClick={() => setStep(3)}
                       className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase text-xs tracking-wider px-8 py-3.5 rounded-full hover:opacity-90 flex items-center gap-2 cursor-pointer"
                     >
-                      <span>SELECT DATE & TIME</span>
+                      <span>SELECCIONAR FECHA Y HORA</span>
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -164,10 +164,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {/* Step 3: Date & Time */}
               {step === 3 && (
                 <div className="space-y-4">
-                  <h3 className="font-display text-2xl font-bold uppercase">DATE & SLOT</h3>
+                  <h3 className="font-display text-2xl font-bold uppercase">FECHA Y HORARIO</h3>
                   
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider mb-2">Select Date</label>
+                    <label className="block text-xs font-bold uppercase tracking-wider mb-2">Selecciona Fecha</label>
                     <input
                       type="date"
                       value={bookingDate}
@@ -177,7 +177,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-xs font-bold uppercase tracking-wider mb-2">Available Time Slots</label>
+                    <label className="block text-xs font-bold uppercase tracking-wider mb-2">Horarios Disponibles</label>
                     <div className="grid grid-cols-3 sm:grid-cols-4 gap-2">
                       {timeSlots.map((time) => (
                         <button
@@ -201,13 +201,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       onClick={() => setStep(2)}
                       className="border border-zinc-300 dark:border-zinc-700 font-bold text-xs uppercase px-6 py-3.5 rounded-full cursor-pointer"
                     >
-                      BACK
+                      ATRÁS
                     </button>
                     <button
                       onClick={() => setStep(4)}
                       className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase text-xs tracking-wider px-8 py-3.5 rounded-full hover:opacity-90 flex items-center gap-2 cursor-pointer"
                     >
-                      <span>GUEST DETAILS</span>
+                      <span>DATOS DE CONTACTO</span>
                       <ArrowRight className="w-4 h-4" />
                     </button>
                   </div>
@@ -217,26 +217,26 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               {/* Step 4: Contact Information */}
               {step === 4 && (
                 <form onSubmit={handleCompleteBooking} className="space-y-4">
-                  <h3 className="font-display text-2xl font-bold uppercase">YOUR DETAILS</h3>
+                  <h3 className="font-display text-2xl font-bold uppercase">TUS DATOS</h3>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Full Name</label>
+                      <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Nombre Completo</label>
                       <input
                         type="text"
                         required
-                        placeholder="e.g. Alexandra Smith"
+                        placeholder="Ej. María Rodríguez"
                         value={clientName}
                         onChange={e => setClientName(e.target.value)}
                         className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-3 text-sm"
                       />
                     </div>
                     <div>
-                      <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Email Address</label>
+                      <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Correo Electrónico</label>
                       <input
                         type="email"
                         required
-                        placeholder="alexandra@example.com"
+                        placeholder="maria@ejemplo.com"
                         value={clientEmail}
                         onChange={e => setClientEmail(e.target.value)}
                         className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-3 text-sm"
@@ -245,11 +245,11 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Phone Number</label>
+                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Teléfono / WhatsApp</label>
                     <input
                       type="tel"
                       required
-                      placeholder="+44 7700 900077"
+                      placeholder="+506 8888 8888"
                       value={clientPhone}
                       onChange={e => setClientPhone(e.target.value)}
                       className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-3 text-sm"
@@ -257,10 +257,10 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   </div>
 
                   <div>
-                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Special Notes / Hair Requirements</label>
+                    <label className="block text-[11px] font-bold uppercase tracking-wider mb-1">Notas o Tipo de Cabello</label>
                     <textarea
                       rows={2}
-                      placeholder="e.g. Looking for subtle face-framing layers, long history of balayage..."
+                      placeholder="Ej. Tipo de rizo (3B/3C), en proceso de transición, alergias..."
                       value={specialNotes}
                       onChange={e => setSpecialNotes(e.target.value)}
                       className="w-full bg-zinc-100 dark:bg-zinc-900 border border-zinc-300 dark:border-zinc-700 rounded-xl p-3 text-sm"
@@ -270,16 +270,16 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                   {/* Summary Box */}
                   <div className="bg-zinc-100 dark:bg-zinc-900 p-4 rounded-2xl space-y-2 border border-zinc-200 dark:border-zinc-800 text-xs">
                     <div className="flex justify-between font-bold">
-                      <span>{selectedService.name} with {selectedStylist.name}</span>
-                      <span>£{selectedService.price}</span>
+                      <span>{selectedService.name} con {selectedStylist.name}</span>
+                      <span>{selectedService.priceFormat}</span>
                     </div>
                     <div className="text-zinc-500 flex justify-between">
-                      <span>Date & Time</span>
+                      <span>Fecha y hora</span>
                       <span>{bookingDate} @ {selectedTime}</span>
                     </div>
                     <div className="pt-2 border-t border-zinc-200 dark:border-zinc-800 text-[11px] text-amber-600 dark:text-amber-400 font-semibold flex items-center gap-1.5">
                       <ShieldCheck className="w-4 h-4" />
-                      <span>Deposit requirement waived for online preview reservation</span>
+                      <span>Reserva previa de evaluación en Santa Ana, Costa Rica</span>
                     </div>
                   </div>
 
@@ -289,13 +289,13 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                       onClick={() => setStep(3)}
                       className="border border-zinc-300 dark:border-zinc-700 font-bold text-xs uppercase px-6 py-3.5 rounded-full cursor-pointer"
                     >
-                      BACK
+                      ATRÁS
                     </button>
                     <button
                       type="submit"
                       className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase text-xs tracking-wider px-8 py-3.5 rounded-full hover:opacity-90 flex items-center gap-2 cursor-pointer shadow-lg"
                     >
-                      <span>CONFIRM APPOINTMENT</span>
+                      <span>CONFIRMAR CITA</span>
                       <CheckCircle2 className="w-4 h-4 text-emerald-500" />
                     </button>
                   </div>
@@ -311,29 +311,29 @@ export const BookingModal: React.FC<BookingModalProps> = ({
               </div>
 
               <div className="space-y-2">
-                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">APPOINTMENT CONFIRMED</span>
-                <h3 className="font-display text-4xl font-bold uppercase">WE LOOK FORWARD TO STYLING YOU</h3>
+                <span className="text-xs font-bold uppercase tracking-widest text-emerald-600 dark:text-emerald-400">CITA CONFIRMADA</span>
+                <h3 className="font-display text-4xl font-bold uppercase">¡ESPERAMOS VERTE EN EL SALÓN!</h3>
                 <p className="text-zinc-600 dark:text-zinc-400 text-sm max-w-md mx-auto">
-                  A confirmation email has been dispatched to <strong className="text-zinc-900 dark:text-white">{clientEmail}</strong>.
+                  Hemos enviado un resumen a <strong className="text-zinc-900 dark:text-white">{clientEmail}</strong>.
                 </p>
               </div>
 
               <div className="bg-zinc-100 dark:bg-zinc-900 p-6 rounded-2xl max-w-md mx-auto text-left space-y-3 text-xs border border-zinc-200 dark:border-zinc-800">
                 <div className="flex justify-between py-1 border-b border-zinc-200 dark:border-zinc-800">
-                  <span className="text-zinc-500">Service:</span>
+                  <span className="text-zinc-500">Servicio:</span>
                   <span className="font-bold uppercase">{selectedService.name}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-zinc-200 dark:border-zinc-800">
-                  <span className="text-zinc-500">Stylist:</span>
+                  <span className="text-zinc-500">Estilista:</span>
                   <span className="font-bold">{selectedStylist.name}</span>
                 </div>
                 <div className="flex justify-between py-1 border-b border-zinc-200 dark:border-zinc-800">
-                  <span className="text-zinc-500">Date & Time:</span>
-                  <span className="font-bold">{bookingDate} at {selectedTime}</span>
+                  <span className="text-zinc-500">Fecha y Hora:</span>
+                  <span className="font-bold">{bookingDate} a las {selectedTime}</span>
                 </div>
                 <div className="flex justify-between py-1">
-                  <span className="text-zinc-500">Location:</span>
-                  <span className="font-bold">Marylebone Flagship, London</span>
+                  <span className="text-zinc-500">Ubicación:</span>
+                  <span className="font-bold">Santa Ana, San José, Costa Rica</span>
                 </div>
               </div>
 
@@ -341,7 +341,7 @@ export const BookingModal: React.FC<BookingModalProps> = ({
                 onClick={onClose}
                 className="bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase text-xs tracking-widest px-10 py-4 rounded-full hover:opacity-90 cursor-pointer"
               >
-                RETURN TO WEBSITE
+                VOLVER AL SITIO
               </button>
             </div>
           )}

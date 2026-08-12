@@ -21,39 +21,35 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             className="lg:col-span-5 space-y-6 lg:pr-6"
           >
             <div className="space-y-2">
-              <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
-                WE ARE STRAND HAVEN
-              </h2>
-              <p className="text-xs uppercase tracking-widest text-zinc-400 font-semibold">
-                OUR PHILOSOPHY
+              <p className="text-xs uppercase tracking-widest text-amber-400 font-semibold">
+                NUESTRA HISTORIA
               </p>
+              <h2 className="font-display text-4xl sm:text-5xl font-bold uppercase tracking-tight text-white">
+                SOMOS TRUE SALON CURLS
+              </h2>
             </div>
 
             <p className="text-zinc-300 text-sm sm:text-base leading-relaxed font-sans-body">
-              An award-winning London hair and beauty salon, Strand Haven offers a haven of calm and indulgent luxury across its two premier London locations. Its well-respected and trusted reputation has been fostered since first opening its flagship Marylebone salon in the summer of 2008.
-            </p>
-
-            <p className="text-zinc-400 text-sm sm:text-base leading-relaxed font-sans-body">
-              Founder Shai Greenberg leads a highly experienced team of stylists, colourists, and beauty experts who work together to create an outstanding experience and exceptional level of service to clients, whatever their requirements may be.
+              En True Salon Curls somos maestras y especialistas en rizos, coloración y transiciones capilares. Acompañamos a cada clienta en su proceso de transición de liso a rizo — un camino que puede tomar hasta 6 meses — con diagnóstico capilar completo, planes personalizados y mucho acompañamiento. Creemos que el autoestima se refleja en tus raíces: por eso cada visita es una experiencia pensada para ti.
             </p>
 
             {/* Features list */}
-            <div className="grid grid-cols-2 gap-4 pt-2">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <Award className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Award-Winning Salon</span>
+                <span>Especialistas en Rizos, Color y Transiciones</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <ShieldCheck className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Master Colourists</span>
+                <span>Diagnóstico Capilar Completo</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <HeartHandshake className="w-4 h-4 text-amber-400 shrink-0" />
-                <span>Bespoke Consultations</span>
+                <span>Talleres y Asesorías para Estilistas</span>
               </div>
               <div className="flex items-center gap-2.5 text-xs text-zinc-300">
                 <span className="w-2 h-2 rounded-full bg-amber-400"></span>
-                <span>Marylebone & Mayfair</span>
+                <span>Ubicación Única: Santa Ana, Costa Rica</span>
               </div>
             </div>
 
@@ -62,7 +58,7 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
                 onClick={onOpenBooking}
                 className="group inline-flex items-center gap-2 bg-white hover:bg-zinc-100 text-zinc-900 font-bold uppercase tracking-widest text-xs py-3.5 px-8 rounded-full transition-all transform active:scale-95 cursor-pointer shadow-md"
               >
-                <span>BOOK NOW</span>
+                <span>Reservar cita</span>
                 <ArrowUpRight className="w-4 h-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
               </button>
             </div>
@@ -80,13 +76,13 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
             <div className="relative rounded-xl overflow-hidden aspect-[4/5] sm:aspect-[3/4] shadow-lg group">
               <img
                 src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&q=80&w=1000"
-                alt="Strand Haven Salon Interior"
+                alt="True Salon Curls Espacio"
                 className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-80"></div>
               <div className="absolute bottom-4 left-4 right-4">
-                <p className="text-xs uppercase tracking-wider font-semibold text-zinc-200">Flagship Salon</p>
-                <p className="text-sm font-bold text-white uppercase">Marylebone, London</p>
+                <p className="text-xs uppercase tracking-wider font-semibold text-zinc-300">Ubicación Exclusiva</p>
+                <p className="text-sm font-bold text-white uppercase">NUESTRO ESPACIO, SANTA ANA</p>
               </div>
             </div>
 
@@ -95,22 +91,22 @@ export const AboutSection: React.FC<AboutSectionProps> = ({ onOpenBooking }) => 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
                   src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&q=80&w=800"
-                  alt="Stylist working on hair"
+                  alt="Salón de Color True Salon Curls"
                   className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-                  Styling Studio
+                  SALÓN DE COLOR
                 </div>
               </div>
 
               <div className="relative rounded-xl overflow-hidden aspect-[16/10] shadow-md group">
                 <img
                   src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?auto=format&fit=crop&q=80&w=800"
-                  alt="Hair wash & scalp treatment"
+                  alt="Zona de Lavado e Hidratación Rizada"
                   className="w-full h-full object-cover editorial-img group-hover:scale-105 transition-transform duration-700"
                 />
                 <div className="absolute bottom-3 left-3 text-xs font-semibold text-white uppercase bg-black/60 backdrop-blur-xs px-2.5 py-1 rounded-md">
-                  Relaxation Basin
+                  DIAGNÓSTICO & DETOX
                 </div>
               </div>
             </div>

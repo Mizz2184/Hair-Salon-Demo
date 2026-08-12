@@ -37,13 +37,13 @@ export const ReviewsSection: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
         {/* Header */}
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-12 pb-6 border-b border-zinc-200 dark:border-zinc-800 gap-6">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 pb-6 border-b border-zinc-200 dark:border-zinc-800 gap-6">
           <div>
             <span className="text-xs font-bold uppercase tracking-widest text-amber-600 dark:text-amber-400">
-              CLIENT TESTIMONIALS
+              TESTIMONIOS Y COMUNIDAD
             </span>
             <h2 className="font-display text-4xl sm:text-6xl font-bold uppercase text-zinc-900 dark:text-white mt-1">
-              HAIRSTYLES & REVIEWS
+              EXPERIENCIAS DE CLIENTAS
             </h2>
           </div>
 
@@ -52,8 +52,19 @@ export const ReviewsSection: React.FC = () => {
             className="inline-flex items-center gap-2 bg-zinc-900 dark:bg-white text-white dark:text-zinc-950 font-bold uppercase tracking-wider text-xs py-3 px-6 rounded-full hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors shadow-sm cursor-pointer"
           >
             <MessageSquarePlus className="w-4 h-4" />
-            <span>LEAVE A RECEPTION REVIEW</span>
+            <span>Dejar mi reseña →</span>
           </button>
+        </div>
+
+        {/* Honest Community Note */}
+        <div className="mb-8 p-4 bg-amber-500/10 border border-amber-500/20 rounded-xl flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 text-xs text-zinc-700 dark:text-zinc-300 font-sans-body">
+          <div className="flex items-center gap-2 font-semibold">
+            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
+            <span>Comunidad de +7.200 seguidores en Facebook • Santa Ana, Costa Rica</span>
+          </div>
+          <p className="text-zinc-500 dark:text-zinc-400 text-[11px]">
+            Nuestra comunidad crece día a día. ¡Sé de las primeras en compartir tu transformación de rizos!
+          </p>
         </div>
 
         {/* Reviews Grid */}
